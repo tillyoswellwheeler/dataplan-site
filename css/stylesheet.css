@@ -240,11 +240,21 @@ h2 {
  transition: all .4s ease;
 }
 
+
 #monthly:checked ~ .toggle_option_slider{
  background: rgba(255,255,255,.3);
  left: 3px;
 }
 #annually:checked ~ .toggle_option_slider{
+ background: rgba(255,255,255,.3);
+ left: 109px;
+}
+
+#chatterbox-monthly:checked ~ .chatterbox-toggle_option_slider{
+ background: rgba(255,255,255,.3);
+ left: 3px;
+}
+#chatterbox-annually:checked ~ .chatterbox-toggle_option_slider{
  background: rgba(255,255,255,.3);
  left: 109px;
 }

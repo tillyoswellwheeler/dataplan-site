@@ -22,48 +22,21 @@ $('#wolf--calculate').click(function(event) {
 
 // Define variables
 
-var gb = 0;
+var price = 0;
 var mins = 0;
-
+var schedule = 0;
+var months = 0;
 var total = 0;
 
-// User(clicks) selects GB
+$('#chatterbox--calculate').click(function(event) {
+    event.preventDefault();
 
-$('input[name="GB"]:checked').click(function(event) {
-  var gb = parseInt(this.getAttribute("value"));
-  console.log(gb);
-  return options_added();
-})
+    var price = $('#chatterbox input[name="chatterbox-plan--price"]:checked').val();
+    var mins = $('#chatterbox input[name="chatterbox-plan--mins"]:checked').val();
+    var schedule = $('#chatterbox input[name="chatterbox-plan--schedule"]:checked').val();
+    schedule = parseInt(schedule);
+    var total = price * schedule;
+    console.log('price ' + price + ' sched ' + schedule);
 
-// User(clicks) selects mins
-
-$('minutes').click(function(event) {
-  var mins = parseInt(this.getAttribute("value"));
-})
-
-// GB and mins values added together—monthly is the default and var total
-
-function options_added() {
-  var total = gb + mins;
-  $("#total").text(total);
-  return total;
-}
-
-
-
-// listen for user clicks annually
-
-$('annually').click(function(event) {
-  total = total * 12;
-  $("#total").text(total);
-
-})
-
-// listen for user clicks Monthly
-
-$('monthly').click(function(event) {
-    $("#total").text(total);
-
-})
-
-// Button BUY NOW appears after var total sum function done
+    $('#chatterbox .chatterbox-plan--cost p').html('Total cost: £' + total);
+});

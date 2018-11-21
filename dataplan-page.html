@@ -132,68 +132,72 @@
    </section>
    <!-- end of lonewolf plan -->
 
-      <section class="build-plan">
-     <h1>Build Your Chatterbox Plan</h1>
-     <div class="container">
-       <div class="row">
-         <div class="col-sm-2">
-           <!--blank space-->
-         </div>
-         <div id="calculate" class="col-sm-8">
-           <!--make box around this-->
-           <h3>Choose GB per month:</h3>
-           <label class="radio-inline">
-             <input type="radio" name="GB" id="1GB" value="14" checked> 1 GB
-           </label>
-           <label class="radio-inline">
-             <input type="radio" name="GB" id="6GB" value="18"> 6 GB
-           </label>
-           <label class="radio-inline">
-             <input type="radio" name="GB" id="10GB" value="20"> 10 GB
-           </label>
-           <label class="radio-inline">
-             <input type="radio" name="GB" id="20GB" value="30"> 20 GB
-           </label>
-           <div class="mins">
-             <h3>Choose minutes per month:</h3>
-             <label class="radio-inline">
-               <input type="radio" name="mins" id="180" value="3" checked> 180
-             </label>
-             <label class="radio-inline">
-               <input type="radio" name="mins" id="300" value="5"> 300
-             </label>
-             <label class="radio-inline">
-               <input type="radio" name="mins" id="600" value="10"> 600
-             </label>
-             <label class="radio-inline">
-               <input type="radio" name="mins" id="unlimited" value="12"> Unlimited
-             </label>
-           </div>
-           <div>
-           <h3>Total: <span id="total"></span></h3>
-             </div>
-           <h3>Pay:</h3>
-           <div class="toggle_radio">
-             <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
-             <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
-             <label for="first_toggle" name="monthly">
-               <p>Monthly</p>
-             </label>
-             <label for="second_toggle" name="annually">
-               <p>Annually</p>
-             </label>
-             <div class="toggle_option_slider">
-             </div>
-
-           </div>
-         </div>
-         <div class="col-sm-2">
-           <!--blank space-->
+   <!-- chatterbox -->
+   <section id="chatterbox" class="build-plan">
+   <h1>Build Your Chatterbox Plan</h1>
+   <div class="container">
+   <div class="row">
+     <div class="col-sm-2">
+       <!--blank space-->
+     </div>
+     <div id="chatterbox-calculate" class="col-sm-8">
+       <!--make box around this-->
+       <form>
+       <h3>Choose GB per month:</h3>
+       <label class="radio-inline">
+         <input type="radio" name="plan--price" id="chatterbox-1GB" value="14" checked> 1 GB
+       </label>
+       <label class="radio-inline">
+         <input type="radio" name="plan--price" id="chatterbox-6GB" value="18"> 6 GB
+       </label>
+       <label class="radio-inline">
+         <input type="radio" name="plan--price" id="chatterbox-10GB" value="20"> 10 GB
+       </label>
+       <label class="radio-inline">
+         <input type="radio" name="plan--price" id="chatterbox-20GB" value="30"> 20 GB
+       </label>
+       <div class="mins">
+         <h3>Choose minutes per month:</h3>
+         <label class="radio-inline">
+           <input type="radio" name="plan--mins" id="chatterbox-180-min" value="3" checked> 180
+         </label>
+         <label class="radio-inline">
+           <input type="radio" name="plan--mins" id="chatterbox-300-min" value="5"> 300
+         </label>
+         <label class="radio-inline">
+           <input type="radio" name="plan--mins" id="chatterbox-600-min" value="10"> 600
+         </label>
+         <label class="radio-inline">
+           <input type="radio" name="plan--mins" id="chatterbox-unlimited-min" value="12"> Unlimited
+         </label>
+       </div>
+       <h3>Pay:</h3>
+       <div class="toggle_radio">
+         <input type="radio" class="toggle_option" name="plan--schedule" id="chatterbox-monthly" value="1">
+         <input type="radio" checked class="toggle_option" id="chatterbox-annually" name="plan--schedule"  value="12">
+         <label for="monthly" name="monthly">
+           <span>Monthly</span>
+         </label>
+         <label for="annually" name="annually">
+           <span>Annually</span>
+         </label>
+         <div class="toggle_option_slider">
          </div>
        </div>
+       <button id="chatterbox--calculate">Calculate price</button>
+       </form>
+       <footer class="plan--cost">
+         <p></p>
+       </footer>
      </div>
+     <div class="col-sm-2">
+       <!--blank space-->
+     </div>
+   </div>
+   </div>
    </section>
    <!-- end of build plan - chatterbox -->
+
 
       <section>
         <h2></h2>
