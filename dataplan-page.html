@@ -26,49 +26,108 @@
       </div>
     </nav>
 
-    <header class="jumbotron">
-      <h1>ALL YOU CAN EAT DATA</h1>
-      <img src="images/dataplan-header.jpg" alt="People at a concert in B&W.">
-      <div class="card-carousel">
-        <div class="my-card">
-          <h2></h2>
-          <img class="" src="" alt="">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <button class=""></button>
-        </div>
+    <header class="container-fluid">
+      <h1 class="banner">ALL YOU CAN EAT DATA. <span>Don’t miss out on our awesome deals.</span></h1>
+      <img class="img-responsive" src="images/dataplan-header.jpg" alt="People looking at a city.">
 
-        <div class="my-card">
-          <h2></h2>
-          <img class="" src="" alt="">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <button class=""></button>
-        </div>
+      <div class="container cards-row">
+        <div class="row text-center">
+          <div class="card col-md-3" >
+            <div class="card-body">
+              <h2 class="card-title">Lone wolf</h2>
+              <img class="" src="images/assets/dataplan-phone.png" alt="">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
 
-        <div class="my-card">
-          <h2></h2>
-          <img class="" src="" alt="">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <button class=""></button>
+          <div class="card col-md-3">
+            <div class="card-body">
+              <h2 class="card-title">Chatterbox</h2>
+              <img class="" src="images/assets/dataplan-phone.png" alt="">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+
+          <div class="card col-md-3" >
+            <div class="card-body">
+              <h2 class="card-title">Family</h2>
+              <img class="" src="images/assets/dataplan-phone.png" alt="">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
 
     <main>
-      <section>
-        <img class="" src="" alt="">
-      </section>
+      <section class="build-plan">
+      <h1>Build Your Plan</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <!--blank space-->
+          </div>
+          <div id="calculate" class="col-sm-8">
+            <!--make box around this-->
+            <h3>Choose GB per month:</h3>
+            <label class="radio-inline">
+              <input type="radio" name="GB" id="1GB" value="1GB" checked> 1 GB
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="GB" id="6GB" value="6GB"> 6 GB
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="GB" id="10GB" value="10GB"> 10 GB
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="GB" id="20GB" value="20GB"> 20 GB
+            </label>
+            <div class="minues">
+              <h3>Choose minutes per month:</h3>
+              <label class="radio-inline">
+                <input type="radio" name="minutes" id="180" value="180" checked> 180
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="minutes" id="300" value="300"> 300
+              </label><label class="radio-inline">
+                <input type="radio" name="minutes" id="600" value="600"> 600
+              </label><label class="radio-inline">
+                <input type="radio" name="minutes" id="unlimited" value="Unlimited"> Unlimited
+              </label>
+            </div>
+            <h3>Pay:</h3>
+            <div class="toggle_radio">
+              <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
+              <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
+              <label for="first_toggle">
+                <p>Monthly</p>
+              </label>
+              <label for="second_toggle">
+                <p>Annualy</p>
+              </label>
+              <div class="toggle_option_slider">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <!--blank space-->
+          </div>
+        </div>
+      </div>
+    </section>
 
       <section>
         <h2></h2>
@@ -81,9 +140,9 @@
     </main>
 
     <footer class=“container”>
+      <hr class= "line" />
       <div class=“row”>
-        <hr class= "line" />
-        <div class=“col-xs-12 col-sm-3”>
+        <div class="col-xs-12 col-sm-3">
           <h6>CONTACT US</h6>
           <ul>
             <li><a href= "">Contact information<span class="glyphicon glyphicon-menu-right"></span></a></li>
@@ -101,15 +160,13 @@
           </ul>
         </div>
 
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-2">
         </div>
 
-        <div id="socil-media" class="col-xs-12 col-sm-2">
-          <ul>
-            <a href="" class="btn btn-primary btn-lg btn-twitter">Twitter</a>
-            <a href="" class="btn btn-primary btn-lg btn-facebook">Facebook</a>
-            <a href="" class="btn btn-primary btn-lg btn-pinterest">Pinterest</a>
-          </ul>
+        <div id="social-media" class="col-xs-12 col-sm-4">
+           <a href="#" class="fa fa-facebook"></a>
+           <a href="#" class="fa fa-twitter"></a>
+           <a href="#" class="fa fa-instagram"></a
         </div>
       </div> <!--close row-->
       <hr class= "line" />
