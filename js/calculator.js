@@ -1,3 +1,7 @@
+// Lone Wolf calculator
+
+
+
 // Chatterbox Calculator
 
 // Define variables
@@ -11,6 +15,7 @@ var total = 0;
 
 $('GB').click(function(event) {
   var gb = parseInt(this.getAttribute("value"));
+  return options_added();
 }
 
 // User(clicks) selects mins
@@ -23,7 +28,25 @@ $('minutes').click(function(event) {
 
 function options_added() {
   var total = gb + mins;
+  $("#total").text(total);
 }
+
+
+
 // listen for user clicks annually
+
+$('annually').click(function(event) {
+  var total * 12 = total;
+  $("#total").text(total);
+
+}
+
 // listen for user clicks Monthly
+
+$('monthly').click(function(event) {
+  var total / 12 = total;
+  $("#total").text(total);
+
+}
+
 // Button BUY NOW appears after var total sum function done

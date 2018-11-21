@@ -44,13 +44,13 @@ h2 {
   border: none;
 }
 
-.btn-primary {
+.btn-primary .btn-shop-now {
   background-color: black;
   color: white;
   border: none;
 }
 
-.btn-primary:hover {
+.btn-shop-now:hover {
   background-color: gray;
   color; white;
 }
