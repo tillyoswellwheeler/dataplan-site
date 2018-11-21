@@ -13,22 +13,24 @@ var total = 0;
 
 // User(clicks) selects GB
 
-$('GB').click(function(event) {
+$('input[name="GB"]:checked').click(function(event) {
   var gb = parseInt(this.getAttribute("value"));
+  console.log(gb);
   return options_added();
-}
+})
 
 // User(clicks) selects mins
 
 $('minutes').click(function(event) {
   var mins = parseInt(this.getAttribute("value"));
-}
+})
 
 // GB and mins values added together—monthly is the default and var total
 
 function options_added() {
   var total = gb + mins;
   $("#total").text(total);
+  return total;
 }
 
 
@@ -36,17 +38,16 @@ function options_added() {
 // listen for user clicks annually
 
 $('annually').click(function(event) {
-  var total * 12 = total;
+  total = total * 12;
   $("#total").text(total);
 
-}
+})
 
 // listen for user clicks Monthly
 
 $('monthly').click(function(event) {
-  var total / 12 = total;
-  $("#total").text(total);
+    $("#total").text(total);
 
-}
+})
 
 // Button BUY NOW appears after var total sum function done
