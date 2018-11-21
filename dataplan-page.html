@@ -30,9 +30,12 @@
       <h1 class="banner">ALL YOU CAN EAT DATA. <span>Don’t miss out on our awesome deals.</span></h1>
       <img class="img-responsive" src="images/dataplan-header.jpg" alt="People looking at a city.">
 
-      <div class="container cards-row">
+      <div class="container">
         <div class="row text-center">
-          <div class="card col-md-3" >
+          <div class="col-sm-3">
+            <!--blank space-->
+          </div>
+          <div class="card col-md-2" >
             <div class="card-body">
               <h2 class="card-title">Lone wolf</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
@@ -45,7 +48,7 @@
             </div>
           </div>
 
-          <div class="card col-md-3">
+          <div class="card col-md-2">
             <div class="card-body">
               <h2 class="card-title">Chatterbox</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
@@ -58,7 +61,7 @@
             </div>
           </div>
 
-          <div class="card col-md-3" >
+          <div class="card col-md-2" >
             <div class="card-body">
               <h2 class="card-title">Family</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
@@ -69,10 +72,66 @@
               </ul>
               <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
             </div>
+            <div class="col-sm-3">
+              <!--blank space-->
+            </div>
           </div>
         </div>
 
     <main>
+      <!-- plan for lonewolf -->
+
+   <section class="build-plan">
+     <h1>Build Your Lonewolf Plan</h1>
+     <div id="wolf" class="container">
+       <div class="row">
+         <div class="col-sm-2">
+           <!--blank space-->
+         </div>
+         <div id="calculate" class="col-sm-8">
+           <!--make box around this-->
+           <form >
+           <h3>Choose GB per month:</h3>
+           <label for="wolf--3gb"class="radio-inline">
+             <input type="radio" name="plan--price" id="wolf--3gb" value="15" checked> <span>3 GB</span>
+           </label>
+           <label for="wolf--6gb"class="radio-inline">
+             <input type="radio" name="plan--price" id="wolf--6gb" value="17"> <span>6 GB</span>
+           </label>
+           <label for="wolf--15gb"class="radio-inline">
+             <input type="radio" name="plan--price" id="wolf--15gb" value="22"> <span>15 GB</span>
+           </label>
+           <label for="wolf--30gb"class="radio-inline">
+             <input type="radio" name="plan--price" id="wolf--30gb" value="27"> <span>30 GB</span>
+           </label>
+           <h3>Pay: <span></span></h3>
+           <div class="toggle_radio">
+             <input type="radio" class="toggle_option" name="plan--schedule" id="monthly" value="1">
+             <input type="radio" checked class="toggle_option" id="annually" name="plan--schedule"  value="12">
+             <label for="monthly" name="monthly">
+               <span>Monthly</span>
+             </label>
+             <label for="annually" name="annually">
+               <span>Annually</span>
+             </label>
+             <div class="toggle_option_slider">
+             </div>
+           </div>
+           <button id="wolf--calculate">Calculate price</button>
+           </form>
+           <footer class="plan--cost">
+             <p></p>
+           </footer>
+         </div>
+
+         <div class="col-sm-2">
+           <!--blank space-->
+         </div>
+       </div>
+     </div>
+   </section>
+   <!-- end of lonewolf plan -->
+
       <section class="build-plan">
      <h1>Build Your Chatterbox Plan</h1>
      <div class="container">

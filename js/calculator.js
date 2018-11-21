@@ -1,4 +1,20 @@
 // Lone Wolf calculator
+var price = 0;
+var schedule = 0;
+var months = 0;
+var total = 0;
+
+$('#wolf--calculate').click(function(event) {
+    event.preventDefault();
+
+    var price = $('#wolf input[name="plan--price"]:checked').val();
+    var schedule = $('#wolf input[name="plan--schedule"]:checked').val();
+    schedule = parseInt(schedule);
+    var total = price * schedule;
+    console.log('price ' + price + ' sched ' + schedule);
+
+    $('#wolf .plan--cost p').html('Total cost: £' + total);
+});
 
 
 

@@ -240,14 +240,15 @@ h2 {
  transition: all .4s ease;
 }
 
-#first_toggle:checked ~ .toggle_option_slider{
+#monthly:checked ~ .toggle_option_slider{
  background: rgba(255,255,255,.3);
  left: 3px;
 }
-#second_toggle:checked ~ .toggle_option_slider{
+#annually:checked ~ .toggle_option_slider{
  background: rgba(255,255,255,.3);
  left: 109px;
 }
+/*end of Monthly/Annualy toogle*/
 /*end of Monthly/Annualy toogle*/
 
 /*Footer styles*/
