@@ -15,15 +15,18 @@
 
 /*Card-Carosel*/
 .card {
-  margin: 0 50px;
-}
-.card-body {
+  margin: 0 5px;
   background-color: grey;
   text-align: center;
-  display: grid;
-  padding: 30px;
-  margin: 50px;
+
 }
+.card-body {
+  padding: 5px 10px;
+}
+
+/* .card-row {
+  text-align: center;
+} */
 
 /*Primary carosel css*/
 
@@ -171,4 +174,10 @@
 .fa-instagram {
    background: #0E68CE;
    color: white;
+}
+
+/*Blocks*/
+
+#netflix-container {
+  margin-top: 50px;
 }
