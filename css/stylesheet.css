@@ -1,8 +1,84 @@
 /*CSS Stylesheet */
-
+/**/
 /*Typography*/
 
 /* Header styles*/
+
+.banner {
+ font-size:22px;
+ color: white;
+ background: black;
+ text-align: center;
+ margin: 20px 0 0 0;
+ z-index: 1;
+}
+
+/*Card-Carosel*/
+.card {
+  margin: 0 50px;
+}
+.card-body {
+  background-color: grey;
+  text-align: center;
+  display: grid;
+  padding: 30px;
+  margin: 50px;
+}
+
+/*Primary carosel css*/
+
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-carousel .my-card {
+  height: 20rem;
+  width: 12rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  background: #2e5266;
+  background: linear-gradient(to top, #2e5266, #6e8898);
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
 
 .card-carousel .my-card:nth-child(0):before {
   content: '0';
@@ -62,4 +138,37 @@
   font-size: 3rem;
   font-weight: 300;
   color: #fff;
+}
+
+.my-card ul {
+  text-decoration: none;
+}
+
+/*Footer styles*/
+/*Social Buttons*/
+.fa {
+   padding: 10px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+}
+
+.fa:hover {
+   opacity: 0.7;
+}
+
+.fa-facebook {
+   background: #3B5998;
+   color: white;
+}
+
+.fa-twitter {
+   background: #55ACEE;
+   color: white;
+}
+
+.fa-instagram {
+   background: #0E68CE;
+   color: white;
 }
