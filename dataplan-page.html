@@ -46,8 +46,8 @@
       <div class="container phones-container">
         <div class="row text-center">
           <div class="card col-md-3" >
-            <div class="card-body">
-              <h2 class="card-title">Lone wolf</h2>
+            <div class="card-body" id="wolf--card">
+              <h2 class="card-title" id="card-title-wolf">Lone wolf</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Cras justo odio</li>
@@ -59,8 +59,8 @@
           </div>
 
           <div class="card col-md-3">
-            <div class="card-body">
-              <h2 class="card-title">Chatterbox</h2>
+            <div class="card-body" id="chatterbox--card">
+              <h2 class="card-title" id="card-title-chatterbox">Chatterbox</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Cras justo odio</li>
@@ -72,8 +72,8 @@
           </div>
 
           <div class="card col-md-3" >
-            <div class="card-body">
-              <h2 class="card-title">Family</h2>
+            <div class="card-body" id="family--card">
+              <h2 class="card-title" id="card-title-family">Family</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Cras justo odio</li>
@@ -85,8 +85,8 @@
           </div>
           <div class="card col-md-3" >
             <div class="card-body">
-              <h2 class="card-title">Lucky Dip</h2>
-              <img class="" src="images/assets/dataplan-phone-highlight.png" alt="">
+              <h2 class="card-title" id="card-title-lucky">Lucky Dip</h2>
+              <img class="" src="images/assets/dataplan-phone.png" alt="">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Cras justo who knows</li>
                 <li class="list-group-item">Tap like you just don't...</li>
@@ -103,105 +103,251 @@
       <div class="tab-pane fade show active" id="pills-wolf" role="tabpanel" aria-labelledby="pills-wolf-tab">
 
 
-       <section id="wolf" class="build-plan">
-         <h1>Build Your Lonewolf Plan</h1>
-         <div class="container">
-           <div class="row">
-             <div class="col-sm-2">
-               <!--blank space-->
-             </div>
-             <div id="wolf-calculate" class="col-sm-8">
-               <!--make box around this-->
-               <form >
-               <h3>Choose GB per month:</h3>
-               <label for="wolf--3gb"class="radio-inline">
-                 <input type="radio" name="plan--price" id="wolf--3gb" value="15" checked> <span>3 GB</span>
-               </label>
-               <label for="wolf--6gb"class="radio-inline">
-                 <input type="radio" name="plan--price" id="wolf--6gb" value="17"> <span>6 GB</span>
-               </label>
-               <label for="wolf--15gb"class="radio-inline">
-                 <input type="radio" name="plan--price" id="wolf--15gb" value="22"> <span>15 GB</span>
-               </label>
-               <label for="wolf--30gb"class="radio-inline">
-                 <input type="radio" name="plan--price" id="wolf--30gb" value="27"> <span>30 GB</span>
-               </label>
-               <h3>Choose: <span></span></h3>
-               <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                 <label class="btn btn-secondary active">
-                   <input type="radio" name="plan--schedule" id="chatterbox-monthly" autocomplete="on" checked  value="1"><span for="monthly" name="monthly"> Monthly
-                 </label>
-                 <label class="btn btn-secondary">
-                   <input type="radio" name="plan--schedule" id="chatterbox-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
-                 </label>
-               </div>
-               <!-- <div class="toggle_radio">
-                 <input type="radio" class="toggle_option" name="plan--schedule" id="monthly" value="1">
-                 <input type="radio" checked class="toggle_option" id="annually" name="plan--schedule"  value="12">
-                 <label for="monthly" name="monthly">
-                   <span>Monthly</span>
-                 </label>
-                 <label for="annually" name="annually">
-                   <span>Annually</span>
-                 </label>
-                 <div class="toggle_option_slider">
-                 </div>
-               </div> -->
-               <button class="btn btn-primary" id="wolf--calculate">Calculate price</button>
-               </form>
-               <footer class="plan--cost">
-                 <p></p>
-               </footer>
-             </div>
+        <section id="wolf" class="build-plan">
+          <h1 class="build-plan-header">Build Your Lonewolf Plan</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2">
+                <!--blank space-->
+              </div>
+              <div id="wolf-build-plan" class="col-md-9">
+                <!--make box around this-->
+                <form >
+                <h3>Choose GB per month:</h3>
+                <label for="wolf--3gb"class="radio-inline">
+                  <input type="radio" name="plan--price" id="wolf--3gb" value="15" checked> <span>3 GB</span>
+                </label>
+                <label for="wolf--6gb"class="radio-inline">
+                  <input type="radio" name="plan--price" id="wolf--6gb" value="17"> <span>6 GB</span>
+                </label>
+                <label for="wolf--15gb"class="radio-inline">
+                  <input type="radio" name="plan--price" id="wolf--15gb" value="22"> <span>15 GB</span>
+                </label>
+                <label for="wolf--30gb"class="radio-inline">
+                  <input type="radio" name="plan--price" id="wolf--30gb" value="27"> <span>30 GB</span>
+                </label>
+                <h3>Choose: <span></span></h3>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="plan--schedule" id="chatterbox-monthly" autocomplete="on" checked  value="1"><span for="monthly" name="monthly"> Monthly
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="plan--schedule" id="chatterbox-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
+                  </label>
+                </div>
+                <!-- <div class="toggle_radio">
+                  <input type="radio" class="toggle_option" name="plan--schedule" id="monthly" value="1">
+                  <input type="radio" checked class="toggle_option" id="annually" name="plan--schedule"  value="12">
+                  <label for="monthly" name="monthly">
+                    <span>Monthly</span>
+                  </label>
+                  <label for="annually" name="annually">
+                    <span>Annually</span>
+                  </label>
+                  <div class="toggle_option_slider">
+                  </div>
+                </div> -->
 
-             <div class="col-sm-2">
-               <!--blank space-->
+                <button class="btn btn-primary" id="wolf--calculate">Calculate price</button>
+                </form>
+                <footer class="plan--cost">
+                  <p></p>
+                  <button class="btn btn-primary lucky-button" >Buy Now</button>
+                </footer>
+              </div>
+
+              <div class="col-sm-2">
+                <!--blank space-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end of lonewolf plan -->
+       </div>
+
+       <div class="tab-pane fade" id="pills-chatterbox" role="tabpanel" aria-labelledby="pills-chatterbox-tab">
+         <!-- chatterbox -->
+         <section id="chatterbox" class="build-plan">
+         <h1>Build Your Chatterbox Plan</h1>
+         <div class="container">
+         <div class="row">
+           <div class="col-sm-2">
+             <!--blank space-->
+           </div>
+           <div id="chatterbox-build-plan" class="col-sm-8">
+             <!--make box around this-->
+             <form>
+             <h3>Choose GB per month:</h3>
+             <label class="radio-inline">
+               <input type="radio" name="plan--price" id="chatterbox-1GB" value="14" checked> 1 GB
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="plan--price" id="chatterbox-6GB" value="18"> 6 GB
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="plan--price" id="chatterbox-10GB" value="20"> 10 GB
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="plan--price" id="chatterbox-20GB" value="30"> 20 GB
+             </label>
+             <div class="mins">
+               <h3>Choose minutes per month:</h3>
+               <label class="radio-inline">
+                 <input type="radio" name="plan--mins" id="chatterbox-180-min" value="3" checked> 180
+               </label>
+               <label class="radio-inline">
+                 <input type="radio" name="plan--mins" id="chatterbox-300-min" value="5"> 300
+               </label>
+               <label class="radio-inline">
+                 <input type="radio" name="plan--mins" id="chatterbox-600-min" value="10"> 600
+               </label>
+               <label class="radio-inline">
+                 <input type="radio" name="plan--mins" id="chatterbox-unlimited-min" value="12"> Unlimited
+               </label>
              </div>
+             <h3>Choose:</h3>
+             <div class="btn-group btn-group-toggle" data-toggle="buttons">
+               <label class="btn btn-secondary active">
+                 <input type="radio" name="plan--schedule" id="chatterbox-monthly" autocomplete="on" checked  value="1"><span for="monthly" name="monthly"> Monthly
+               </label>
+               <label class="btn btn-secondary">
+                 <input type="radio" name="plan--schedule" id="chatterbox-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
+               </label>
+             </div>
+             <p></p>
+             <button class="btn btn-primary"  id="chatterbox--calculate">Calculate price</button>
+             <p></p>
+             </form>
+             <footer class="plan--cost">
+               <p></p>
+               <button class="btn btn-primary lucky-button" >Buy Now</button>
+             </footer>
+           </div>
+           <div class="col-sm-2">
+             <!--blank space-->
            </div>
          </div>
-       </section>
-       <!-- end of lonewolf plan -->
-      </div>
+         </div>
+         </section>
+         <!-- end of build plan - chatterbox -->
+       </div> <!-- end of tab-chatterbox -->
 
-      <div class="tab-pane fade" id="pills-chatterbox" role="tabpanel" aria-labelledby="pills-chatterbox-tab">
-        <!-- chatterbox -->
-        <section id="chatterbox" class="build-plan">
+      <div class="tab-pane fade" id="pills-family" role="tabpanel" aria-labelledby="pills-family-tab">
+        <!-- family -->
+        <section id="family" class="build-plan">
         <h1>Build Your Chatterbox Plan</h1>
         <div class="container">
         <div class="row">
           <div class="col-sm-2">
             <!--blank space-->
           </div>
-          <div id="chatterbox-calculate" class="col-sm-8">
+          <div id="family-build-plan" class="col-sm-8">
             <!--make box around this-->
             <form>
             <h3>Choose GB per month:</h3>
             <label class="radio-inline">
-              <input type="radio" name="plan--price" id="chatterbox-1GB" value="14" checked> 1 GB
+              <input type="radio" name="plan--price" id="family-1GB" value="14" checked> 1 GB
             </label>
             <label class="radio-inline">
-              <input type="radio" name="plan--price" id="chatterbox-6GB" value="18"> 6 GB
+              <input type="radio" name="plan--price" id="family-6GB" value="18"> 6 GB
             </label>
             <label class="radio-inline">
-              <input type="radio" name="plan--price" id="chatterbox-10GB" value="20"> 10 GB
+              <input type="radio" name="plan--price" id="family-10GB" value="20"> 10 GB
             </label>
             <label class="radio-inline">
-              <input type="radio" name="plan--price" id="chatterbox-20GB" value="30"> 20 GB
+              <input type="radio" name="plan--price" id="family-20GB" value="30"> 20 GB
             </label>
-            <div class="mins">
-              <h3>Choose minutes per month:</h3>
-              <label class="radio-inline">
-                <input type="radio" name="plan--mins" id="chatterbox-180-min" value="3" checked> 180
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="plan--mins" id="chatterbox-300-min" value="5"> 300
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="plan--mins" id="chatterbox-600-min" value="10"> 600
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="plan--mins" id="chatterbox-unlimited-min" value="12"> Unlimited
-              </label>
+            <div class="sims">
+              <h3>Choose the number of sims:</h3>
+              <div id="family-one-gb">
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-one-one" value="14.00" checked> 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-two-one" value="21.20"> 2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-three-one" value="28.40"> 3
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
+                </label>
+              </div>
+
+              <div id="family-ten-gb">
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-one-ten" value="20.00" checked> 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-two-ten" value="32.00"> 2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-three-ten" value="44.00"> 3
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-ten" value="56.00"> 4
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-ten" value="68.00"> 5
+                </label>
+              </div>
+
+              <div id="family-one-gb">
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-one-one" value="14.00" checked> 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-two-one" value="21.20"> 2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-three-one" value="28.40"> 3
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
+                </label>
+              </div>
+
+              <div id="family-one-gb">
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-one-one" value="14.00" checked> 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-two-one" value="21.20"> 2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-three-one" value="28.40"> 3
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
+                </label>
+              </div>
+
+              <div id="family-one-gb">
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-one-one" value="14.00" checked> 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-two-one" value="21.20"> 2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-three-one" value="28.40"> 3
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
+                </label>
+              </div>
             </div>
             <h3>Choose:</h3>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -212,22 +358,13 @@
                 <input type="radio" name="plan--schedule" id="chatterbox-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
               </label>
             </div>
-            <!-- <div class="toggle_radio">
-              <input type="radio" class="toggle_option" name="plan--schedule" id="chatterbox-monthly" value="1">
-              <input type="radio" checked class="toggle_option" id="chatterbox-annually" name="plan--schedule"  value="12">
-              <label for="monthly" name="monthly">
-                <span>Monthly</span>
-              </label>
-              <label for="annually" name="annually">
-                <span>Annually</span>
-              </label>
-              <div class="toggle_option_slider">
-              </div>
-            </div> -->
-            <button class="btn btn-primary" id="chatterbox--calculate">Calculate price</button>
+            <p></p>
+            <button class="btn btn-primary"  id="chatterbox--calculate">Calculate price</button>
+            <p></p>
             </form>
             <footer class="plan--cost">
               <p></p>
+              <button class="btn btn-primary lucky-button" >Buy Now</button>
             </footer>
           </div>
           <div class="col-sm-2">
@@ -235,13 +372,8 @@
           </div>
         </div>
         </div>
-        </section>
-        <!-- end of build plan - chatterbox -->
-      </div> <!-- end of tab-chatterbox -->
-
-      <div class="tab-pane fade" id="pills-family" role="tabpanel" aria-labelledby="pills-family-tab">
-
-        <!-- end of build plan - chatterbox -->
+        </section><!-- end of build plan - family -->
+        </div> <!-- end of build plan - family -->
       </div>
     </div>
 
@@ -294,5 +426,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/calculator.js"></script>
+    <script src="js/scripts.js"></script>
+
   </body>
 </html>

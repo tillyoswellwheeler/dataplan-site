@@ -10,6 +10,10 @@ h2 {
   font-size: 24px;
 }
 
+h3{
+ padding: 10px;
+}
+
 /* Top Navs CSS */
 
 
@@ -46,6 +50,10 @@ h2 {
 }
 
 /*Card-Carosel*/
+
+/* .inverted {
+	filter: invert(100%);
+} */
 
 .phones-container {
   margin-top: -20%;
@@ -107,7 +115,7 @@ ul .list-group {
 
 .lucky-button:hover {
   background-color: #157ffb!important;
-  color; white;
+  color: white;
 }
 
 
@@ -234,8 +242,26 @@ ul .list-group {
  background: rgba(255,255,255,.3);
  left: 109px;
 }
-/*end of Monthly/Annualy toogle*/
-/*end of Monthly/Annualy toogle*/
+
+#wolf-build-plan{
+  background-color:rgba(192,192,192,0.4);
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+#chatterbox-build-plan {
+  background-color:rgba(192,192,192,0.4);
+  padding: 20px 20px;
+}
+
+.build-plan-header {
+ padding-left: 50px;
+
+}
+
+.build-plan{
+text-align: center;
+}
 
 /*Footer styles*/
 /*Social Buttons*/
