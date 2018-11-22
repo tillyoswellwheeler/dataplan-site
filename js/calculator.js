@@ -40,3 +40,10 @@ $('#chatterbox--calculate').click(function(event) {
 
     $('#chatterbox .plan--cost p').html('Total cost: £' + total);
 });
+
+// Family calculator
+
+var 1gb = ["14", "". "", "", ""];
+var 1gb = ["14", "". "", "", ""];
+var 1gb = ["14", "". "", "", ""];
+var 1gb = ["14", "". "", "", ""];

@@ -48,7 +48,7 @@ h2 {
 /*Card-Carosel*/
 
 .phones-container {
-  margin-top: -450px;
+  margin-top: -20%;
 }
 
 .list-group-item {
@@ -127,24 +127,33 @@ ul .list-group {
 }
 
 #wolf--calculate {
-  border: none;
-  background-color: black;
-  display: block;
-  text-align: center;
+ border: none;
+ background-color: black;
+ display: block;
+ text-align: center;
+ width:200px;
+   margin-left:auto;
+   margin-right:auto;
 }
 
 #chatterbox--calculate {
-  border: none;
-  background-color: black;
-  display: block;
-  text-align: center;
+ border: none;
+ background-color: black;
+ display: block;
+ text-align: center;
+ width:200px;
+   margin-left:auto;
+   margin-right:auto;
 }
 
 #family--calculate {
-  border: none;
-  background-color: black;
-  display: block;
-  text-align: center;
+ border: none;
+ background-color: black;
+ display: block;
+ text-align: center;
+ width:200px;
+   margin-left:auto;
+   margin-right:auto;
 }
 
 .plan--cost {
