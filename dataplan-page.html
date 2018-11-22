@@ -43,59 +43,49 @@
       <!-- <h1 class="banner">ALL YOU CAN EAT DATA. <span>Don’t miss out on our awesome deals.</span></h1> -->
       <img class="img-responsive" width=100% src="images/dataplan-header.jpg" alt="People looking at a city.">
 
-      <div class="container phones-container">
-        <div class="row text-center">
-          <div class="card col-md-3" >
-            <div class="card-body" id="wolf--card">
-              <h2 class="card-title" id="card-title-wolf">Lone wolf</h2>
-              <img class="" src="images/assets/dataplan-phone.png" alt="">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <button type="button" href="#wolf" class="btn btn-primary btn-shop-now">SHOP NOW</button>
-            </div>
-          </div>
+      <div class="container phones-container" id="data-plan-header">
+       <div class="row text-center">
+         <div class="col-md-2">
+         </div>
+         <div class="card col-md-3" >
+           <div class="card-body">
+             <h2 class="card-title">Lone wolf</h2>
+             <img class="" src="images/assets/dataplan-phone.png" alt="">
+             <ul class="list-group list-group-flush">
+               <li class="list-group-item">Data only sim</li>
+               <li class="list-group-item">Starting from £15/month</li>
+               <li class="list-group-item">Monthly/Annually</li>
+             </ul>
 
-          <div class="card col-md-3">
-            <div class="card-body" id="chatterbox--card">
-              <h2 class="card-title" id="card-title-chatterbox">Chatterbox</h2>
-              <img class="" src="images/assets/dataplan-phone.png" alt="">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <button type="button" href="#chatterbox" class="btn btn-primary">SHOP NOW</button>
-            </div>
-          </div>
+           </div>
+         </div>
 
-          <div class="card col-md-3" >
-            <div class="card-body" id="family--card">
-              <h2 class="card-title" id="card-title-family">Family</h2>
-              <img class="" src="images/assets/dataplan-phone.png" alt="">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <button type="button" href="#family" class="btn btn-primary">SHOP NOW</button>
-            </div>
-          </div>
-          <div class="card col-md-3" >
-            <div class="card-body">
-              <h2 class="card-title" id="card-title-lucky">Lucky Dip</h2>
-              <img class="" src="images/assets/dataplan-phone.png" alt="">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo who knows</li>
-                <li class="list-group-item">Tap like you just don't...</li>
-                <li class="list-group-item">Rest at erelaxos</li>
-              </ul>
-              <button type="button" href="#luckydip" class="btn btn-primary lucky-button">WHO NOWS</button>
-            </div>
-          </div>
-        </div>
+         <div class="card col-md-3">
+           <div class="card-body">
+             <h2 class="card-title">Chatterbox</h2>
+             <img class="" src="images/assets/dataplan-phone.png" alt="">
+             <ul class="list-group list-group-flush">
+               <li class="list-group-item">Data and Minutes</li>
+               <li class="list-group-item">Starting from £14/month</li>
+               <li class="list-group-item">Monthly/Annually</li>
+             </ul>
+
+           </div>
+         </div>
+
+         <div class="card col-md-3" >
+           <div class="card-body">
+             <h2 class="card-title">Family</h2>
+             <img class="" src="images/assets/dataplan-phone.png" alt="">
+             <ul class="list-group list-group-flush">
+               <li class="list-group-item"> Up to 5 sims</li>
+               <li class="list-group-item">Starting from £21/month</li>
+               <li class="list-group-item">Monthly/Annually</li>
+             </ul>
+           </div>
+         </div>
+         <div class="col-md-2">
+         </div>
     </header>
     <main>
 
@@ -235,7 +225,7 @@
       <div class="tab-pane fade" id="pills-family" role="tabpanel" aria-labelledby="pills-family-tab">
         <!-- family -->
         <section id="family" class="build-plan">
-        <h1>Build Your Chatterbox Plan</h1>
+        <h1>Build Your Family Plan</h1>
         <div class="container">
         <div class="row">
           <div class="col-sm-2">
@@ -245,19 +235,21 @@
             <!--make box around this-->
             <form>
             <h3>Choose GB per month:</h3>
-            <label class="radio-inline">
-              <input type="radio" name="plan--price" id="family-1GB" value="14" checked> 1 GB
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="plan--price" id="family-6GB" value="18"> 6 GB
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="plan--price" id="family-10GB" value="20"> 10 GB
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="plan--price" id="family-20GB" value="30"> 20 GB
-            </label>
-            <div class="sims">
+            <div id="family-gb">
+              <label class="radio-inline">
+                <input type="radio" name="plan--price" id="family-1GB" value="" checked> 1 GB
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="plan--price" id="family-6GB" value=""> 6 GB
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="plan--price" id="family-10GB" value=""> 10 GB
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="plan--price" id="family-20GB" value=""> 20 GB
+              </label>
+            </div>
+            <div class="family-sims">
               <h3>Choose the number of sims:</h3>
               <div id="family-one-gb">
                 <label class="radio-inline">
@@ -273,7 +265,7 @@
                   <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
+                  <input type="radio" name="plan--sim" id="family-five-one" value="42.80"> 5
                 </label>
               </div>
 
@@ -291,75 +283,58 @@
                   <input type="radio" name="plan--sim" id="family-four-ten" value="56.00"> 4
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-ten" value="68.00"> 5
+                  <input type="radio" name="plan--sim" id="family-five-ten" value="68.00"> 5
                 </label>
               </div>
 
-              <div id="family-one-gb">
+              <div id="family-twenty-gb">
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-one-one" value="14.00" checked> 1
+                  <input type="radio" name="plan--sim" id="family-one-twenty" value="30.00" checked> 1
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-two-one" value="21.20"> 2
+                  <input type="radio" name="plan--sim" id="family-two-twenty" value="50.00"> 2
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-three-one" value="28.40"> 3
+                  <input type="radio" name="plan--sim" id="family-three-twenty" value="70.00"> 3
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
+                  <input type="radio" name="plan--sim" id="family-four-twenty" value="90.00"> 4
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
-                </label>
-              </div>
-
-              <div id="family-one-gb">
-                <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-one-one" value="14.00" checked> 1
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-two-one" value="21.20"> 2
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-three-one" value="28.40"> 3
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
+                  <input type="radio" name="plan--sim" id="family-five-twenty" value="110.00"> 5
                 </label>
               </div>
 
-              <div id="family-one-gb">
+              <div id="family-forty-gb">
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-one-one" value="14.00" checked> 1
+                  <input type="radio" name="plan--sim" id="family-one-forty" value="40.00" checked> 1
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-two-one" value="21.20"> 2
+                  <input type="radio" name="plan--sim" id="family-two-forty" value="68.00"> 2
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-three-one" value="28.40"> 3
+                  <input type="radio" name="plan--sim" id="family-three-forty" value="96.00"> 3
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-one" value="35.60"> 4
+                  <input type="radio" name="plan--sim" id="family-four-forty" value="124.00"> 4
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="plan--sim" id="family-four-one" value="42.80"> 5
+                  <input type="radio" name="plan--sim" id="family-five-forty" value="152.00"> 5
                 </label>
               </div>
+
             </div>
             <h3>Choose:</h3>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-secondary active">
-                <input type="radio" name="plan--schedule" id="chatterbox-monthly" autocomplete="on" checked  value="1"><span for="monthly" name="monthly"> Monthly
+                <input type="radio" name="plan--schedule" id="family-monthly" autocomplete="on" checked  value="1"><span for="monthly" name="monthly"> Monthly
               </label>
               <label class="btn btn-secondary">
-                <input type="radio" name="plan--schedule" id="chatterbox-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
+                <input type="radio" name="plan--schedule" id="family-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
               </label>
             </div>
             <p></p>
-            <button class="btn btn-primary"  id="chatterbox--calculate">Calculate price</button>
+            <button class="btn btn-primary"  id="family--calculate">Calculate price</button>
             <p></p>
             </form>
             <footer class="plan--cost">

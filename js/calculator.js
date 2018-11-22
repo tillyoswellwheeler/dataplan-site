@@ -60,13 +60,13 @@ $("#family-gb").show();
 $("#family-sims").hide();
 
 $('#family input[name="plan--price"]:checked').click(function(event) {
-  var chosen-gb = document.getElementById('#family input[name="plan--price"]:checked');
+  var chosen-gb = this.getAttribute('#family input[name="plan--price"]:checked');
 
-  if ( chosen-gb == one-gb ) {
-    $("#family-one-gb").show();
-    var chosen-sim = $('#family-one-gb input[id="plan--sim"]:checked').val();
+      if ( chosen-gb == one-gb ) {
+      $("#family-one-gb").show();
+      var chosen-sim = $('#family-one-gb input[id="plan--sim"]:checked').val();
 
-    return schedule;
+      return schedule;
 
     } else if  ( chosen-gb == ten-gb ) {
       $("#family-ten-gb").show();

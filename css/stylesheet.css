@@ -55,6 +55,8 @@ h3{
 	filter: invert(100%);
 } */
 
+
+
 .phones-container {
   margin-top: -20%;
 }
@@ -126,6 +128,19 @@ ul .list-group {
 }
 
 /* Calculator css */
+
+@media (max-width: 770px) {
+   #data-plan-header {
+      display: none;
+   }
+   .data-plan-phone {
+     display: none;
+   }
+   .card-title{
+     background: grey;
+     padding:20px;
+   }
+ }
 
 .build-plan{
  text-align: center;
@@ -251,7 +266,14 @@ ul .list-group {
 
 #chatterbox-build-plan {
   background-color:rgba(192,192,192,0.4);
-  padding: 20px 20px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+#family-build-plan {
+  background-color:rgba(192,192,192,0.4);
+  padding-top: 15px;
+  padding-bottom: 40px;
 }
 
 .build-plan-header {
