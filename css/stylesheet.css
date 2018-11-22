@@ -7,8 +7,27 @@ main {
 /*Typography*/
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
 }
+
+/* Top Navs CSS */
+
+
+
+#navbar-primary .nav-link {
+  color: black;
+  font-size: 130%;
+}
+
+#pills-tab {
+  background-color: black;
+  color: white;
+}
+
+.pill-text-white {
+  color: white;
+}
+
 /* Header styles*/
 
 .banner {
@@ -16,160 +35,76 @@ h2 {
  color: white;
  background: black;
  text-align: center;
- margin: 20px 0 0 0;
+ padding: 15px 0;
+ /* margin-top: 20px; */
  z-index: 1;
 }
 
 /*Card-Carosel*/
-.card {
-  /* margin: 0 5px; */
-  padding: none;
-  background-color: grey;
-  text-align: center;
 
+.phones-container {
+  margin-top: -450px;
+}
+
+.list-group-item {
+  border: none;
+  background-color:rgba(192,192,192,0.1);
+  width: 100%;
 }
 .card-body {
-  /* padding: 5px 10px; */
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color:rgba(192,192,192,0.3);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card {
+  border: none;
+  background-color: opacity 0;
 }
 
 .card-row {
-  margin: -400px 0 50 0;
+  /* margin: -400px 0 50 0; */
   text-align: center;
 
-  /* display: inline; */
 }
 
-.list-group .list-group-flush {
+ul .list-group {
+  /* margin: 5px; */
   padding: none;
   border: none;
 }
 
-.btn-primary .btn-shop-now {
+.list-group-item {
+  padding: 10px 2px;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 5px;
+}
+
+.btn-primary:hover {
+  background-color: gray;
+  color; white;
+}
+
+.lucky-button {
   background-color: black;
   color: white;
   border: none;
 }
 
-.btn-shop-now:hover {
-  background-color: gray;
+.lucky-button:hover {
+  background-color: #157ffb!important;
   color; white;
 }
 
 
 /*Primary carosel css*/
-
-/* .card-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.card-carousel .my-card {
-  height: 20rem;
-  width: 12rem;
-  position: relative;
-  z-index: 1;
-  -webkit-transform: scale(0.6) translateY(-2rem);
-  transform: scale(0.6) translateY(-2rem);
-  opacity: 0;
-  cursor: pointer;
-  pointer-events: none;
-  background: #2e5266;
-  background: linear-gradient(to top, #2e5266, #6e8898);
-  transition: 1s;
-}
-
-.card-carousel .my-card:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  border-radius: 100%;
-  background-color: rgba(0,0,0,0.3);
-  bottom: -5rem;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-
-.card-carousel .my-card.active {
-  z-index: 3;
-  -webkit-transform: scale(1) translateY(0) translateX(0);
-  transform: scale(1) translateY(0) translateX(0);
-  opacity: 1;
-  pointer-events: auto;
-  transition: 1s;
-}
-
-.card-carousel .my-card.prev, .card-carousel .my-card.next {
-  z-index: 2;
-  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
-  transform: scale(0.8) translateY(-1rem) translateX(0);
-  opacity: 0.6;
-  pointer-events: auto;
-  transition: 1s;
-}
-
-
-.card-carousel .my-card:nth-child(0):before {
-  content: '0';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.card-carousel .my-card:nth-child(1):before {
-  content: '1';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.card-carousel .my-card:nth-child(2):before {
-  content: '2';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.card-carousel .my-card:nth-child(3):before {
-  content: '3';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.card-carousel .my-card:nth-child(4):before {
-  content: '4';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-} */
 
 .my-card ul {
   text-decoration: none;
@@ -182,6 +117,31 @@ h2 {
 }
 #calculate {
  background: grey;
+}
+
+#wolf--calculate {
+  border: none;
+  background-color: black;
+  display: block;
+  text-align: center;
+}
+
+#chatterbox--calculate {
+  border: none;
+  background-color: black;
+  display: block;
+  text-align: center;
+}
+
+#family--calculate {
+  border: none;
+  background-color: black;
+  display: block;
+  text-align: center;
+}
+
+.plan--cost {
+  font-size: 20px;
 }
 /*Monthly/Annualy toogle*/
 .toggle_radio{
@@ -263,7 +223,7 @@ h2 {
 
 /*Footer styles*/
 /*Social Buttons*/
-.fa {
+/* .fa {
    padding: 10px;
    font-size: 30px;
    width: 50px;
@@ -288,10 +248,14 @@ h2 {
 .fa-instagram {
    background: #0E68CE;
    color: white;
-}
+} */
 
 /*Blocks*/
 
 #netflix-container {
   margin: 50px 0;
+}
+
+#netflix-container .h2-margintop {
+  margin-top: 20px;
 }

@@ -31,12 +31,12 @@ var total = 0;
 $('#chatterbox--calculate').click(function(event) {
     event.preventDefault();
 
-    var price = $('#chatterbox input[name="chatterbox-plan--price"]:checked').val();
-    var mins = $('#chatterbox input[name="chatterbox-plan--mins"]:checked').val();
-    var schedule = $('#chatterbox input[name="chatterbox-plan--schedule"]:checked').val();
+    var price = $('#chatterbox input[name="plan--price"]:checked').val();
+    var mins = $('#chatterbox input[name="plan--mins"]:checked').val();
+    var schedule = $('#chatterbox input[name="plan--schedule"]:checked').val();
     schedule = parseInt(schedule);
     var total = price * schedule;
     console.log('price ' + price + ' sched ' + schedule);
 
-    $('#chatterbox .chatterbox-plan--cost p').html('Total cost: £' + total);
+    $('#chatterbox .plan--cost p').html('Total cost: £' + total);
 });

@@ -3,12 +3,13 @@
     <head>
       <meta charset="UTF-8">
       <title>Data Plan</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="css/stylesheet.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/assets/dataplan-logo.png" width="70" height="70" alt="Logo.">
@@ -17,7 +18,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav" id="navbar-primary">
             <a class="nav-link" href="">DEALS</a>
             <a class="nav-link" href="">PHONES</a>
             <a class="nav-link" href="">SUPPORT</a>
@@ -26,16 +27,24 @@
       </div>
     </nav>
 
+    <ul class="nav nav-pills mb-3 text-center" id="pills-tab" role="tablist">
+      <li class="nav-item pill-text-white">
+        <a class="nav-link active" id="pills-wolf-tab" data-toggle="pill" href="#pills-wolf" role="tab" aria-controls="pills-wolf" aria-selected="true">Lone Wolf</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-chatterbox-tab" data-toggle="pill" href="#pills-chatterbox" role="tab" aria-controls="pills-chatterbox" aria-selected="false">Chatterbox</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-family-tab" data-toggle="pill" href="#pills-family" role="tab" aria-controls="pills-family" aria-selected="false">Family Plan</a>
+      </li>
+    </ul>
     <header class="container-fluid">
-      <h1 class="banner">ALL YOU CAN EAT DATA. <span>Don’t miss out on our awesome deals.</span></h1>
-      <img class="img-responsive" src="images/dataplan-header.jpg" alt="People looking at a city.">
+      <!-- <h1 class="banner">ALL YOU CAN EAT DATA. <span>Don’t miss out on our awesome deals.</span></h1> -->
+      <img class="img-responsive" width=100% src="images/dataplan-header.jpg" alt="People looking at a city.">
 
-      <div class="container">
+      <div class="container phones-container">
         <div class="row text-center">
-          <div class="col-sm-3">
-            <!--blank space-->
-          </div>
-          <div class="card col-md-2" >
+          <div class="card col-md-3" >
             <div class="card-body">
               <h2 class="card-title">Lone wolf</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
@@ -44,11 +53,11 @@
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+              <button type="button" href="#wolf" class="btn btn-primary btn-shop-now">SHOP NOW</button>
             </div>
           </div>
 
-          <div class="card col-md-2">
+          <div class="card col-md-3">
             <div class="card-body">
               <h2 class="card-title">Chatterbox</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
@@ -57,11 +66,11 @@
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+              <button type="button" href="#chatterbox" class="btn btn-primary">SHOP NOW</button>
             </div>
           </div>
 
-          <div class="card col-md-2" >
+          <div class="card col-md-3" >
             <div class="card-body">
               <h2 class="card-title">Family</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
@@ -70,133 +79,172 @@
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+              <button type="button" href="#family" class="btn btn-primary">SHOP NOW</button>
             </div>
-            <div class="col-sm-3">
-              <!--blank space-->
+          </div>
+          <div class="card col-md-3" >
+            <div class="card-body">
+              <h2 class="card-title">Lucky Dip</h2>
+              <img class="" src="images/assets/dataplan-phone-highlight.png" alt="">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo who knows</li>
+                <li class="list-group-item">Tap like you just don't...</li>
+                <li class="list-group-item">Rest at erelaxos</li>
+              </ul>
+              <button type="button" href="#luckydip" class="btn btn-primary lucky-button">WHO NOWS</button>
             </div>
           </div>
         </div>
-
+    </header>
     <main>
-      <!-- plan for lonewolf -->
 
-   <section class="build-plan">
-     <h1>Build Your Lonewolf Plan</h1>
-     <div id="wolf" class="container">
-       <div class="row">
-         <div class="col-sm-2">
-           <!--blank space-->
-         </div>
-         <div id="calculate" class="col-sm-8">
-           <!--make box around this-->
-           <form >
-           <h3>Choose GB per month:</h3>
-           <label for="wolf--3gb"class="radio-inline">
-             <input type="radio" name="plan--price" id="wolf--3gb" value="15" checked> <span>3 GB</span>
-           </label>
-           <label for="wolf--6gb"class="radio-inline">
-             <input type="radio" name="plan--price" id="wolf--6gb" value="17"> <span>6 GB</span>
-           </label>
-           <label for="wolf--15gb"class="radio-inline">
-             <input type="radio" name="plan--price" id="wolf--15gb" value="22"> <span>15 GB</span>
-           </label>
-           <label for="wolf--30gb"class="radio-inline">
-             <input type="radio" name="plan--price" id="wolf--30gb" value="27"> <span>30 GB</span>
-           </label>
-           <h3>Pay: <span></span></h3>
-           <div class="toggle_radio">
-             <input type="radio" class="toggle_option" name="plan--schedule" id="monthly" value="1">
-             <input type="radio" checked class="toggle_option" id="annually" name="plan--schedule"  value="12">
-             <label for="monthly" name="monthly">
-               <span>Monthly</span>
-             </label>
-             <label for="annually" name="annually">
-               <span>Annually</span>
-             </label>
-             <div class="toggle_option_slider">
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-wolf" role="tabpanel" aria-labelledby="pills-wolf-tab">
+
+
+       <section id="wolf" class="build-plan">
+         <h1>Build Your Lonewolf Plan</h1>
+         <div class="container">
+           <div class="row">
+             <div class="col-sm-2">
+               <!--blank space-->
+             </div>
+             <div id="wolf-calculate" class="col-sm-8">
+               <!--make box around this-->
+               <form >
+               <h3>Choose GB per month:</h3>
+               <label for="wolf--3gb"class="radio-inline">
+                 <input type="radio" name="plan--price" id="wolf--3gb" value="15" checked> <span>3 GB</span>
+               </label>
+               <label for="wolf--6gb"class="radio-inline">
+                 <input type="radio" name="plan--price" id="wolf--6gb" value="17"> <span>6 GB</span>
+               </label>
+               <label for="wolf--15gb"class="radio-inline">
+                 <input type="radio" name="plan--price" id="wolf--15gb" value="22"> <span>15 GB</span>
+               </label>
+               <label for="wolf--30gb"class="radio-inline">
+                 <input type="radio" name="plan--price" id="wolf--30gb" value="27"> <span>30 GB</span>
+               </label>
+               <h3>Choose: <span></span></h3>
+               <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                 <label class="btn btn-secondary active">
+                   <input type="radio" name="plan--schedule" id="chatterbox-monthly" autocomplete="on" checked  value="1"><span for="monthly" name="monthly"> Monthly
+                 </label>
+                 <label class="btn btn-secondary">
+                   <input type="radio" name="plan--schedule" id="chatterbox-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
+                 </label>
+               </div>
+               <!-- <div class="toggle_radio">
+                 <input type="radio" class="toggle_option" name="plan--schedule" id="monthly" value="1">
+                 <input type="radio" checked class="toggle_option" id="annually" name="plan--schedule"  value="12">
+                 <label for="monthly" name="monthly">
+                   <span>Monthly</span>
+                 </label>
+                 <label for="annually" name="annually">
+                   <span>Annually</span>
+                 </label>
+                 <div class="toggle_option_slider">
+                 </div>
+               </div> -->
+               <button class="btn btn-primary" id="wolf--calculate">Calculate price</button>
+               </form>
+               <footer class="plan--cost">
+                 <p></p>
+               </footer>
+             </div>
+
+             <div class="col-sm-2">
+               <!--blank space-->
              </div>
            </div>
-           <button id="wolf--calculate">Calculate price</button>
-           </form>
-           <footer class="plan--cost">
-             <p></p>
-           </footer>
          </div>
+       </section>
+       <!-- end of lonewolf plan -->
+      </div>
 
-         <div class="col-sm-2">
-           <!--blank space-->
-         </div>
-       </div>
-     </div>
-   </section>
-   <!-- end of lonewolf plan -->
+      <div class="tab-pane fade" id="pills-chatterbox" role="tabpanel" aria-labelledby="pills-chatterbox-tab">
+        <!-- chatterbox -->
+        <section id="chatterbox" class="build-plan">
+        <h1>Build Your Chatterbox Plan</h1>
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <!--blank space-->
+          </div>
+          <div id="chatterbox-calculate" class="col-sm-8">
+            <!--make box around this-->
+            <form>
+            <h3>Choose GB per month:</h3>
+            <label class="radio-inline">
+              <input type="radio" name="plan--price" id="chatterbox-1GB" value="14" checked> 1 GB
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="plan--price" id="chatterbox-6GB" value="18"> 6 GB
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="plan--price" id="chatterbox-10GB" value="20"> 10 GB
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="plan--price" id="chatterbox-20GB" value="30"> 20 GB
+            </label>
+            <div class="mins">
+              <h3>Choose minutes per month:</h3>
+              <label class="radio-inline">
+                <input type="radio" name="plan--mins" id="chatterbox-180-min" value="3" checked> 180
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="plan--mins" id="chatterbox-300-min" value="5"> 300
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="plan--mins" id="chatterbox-600-min" value="10"> 600
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="plan--mins" id="chatterbox-unlimited-min" value="12"> Unlimited
+              </label>
+            </div>
+            <h3>Choose:</h3>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="plan--schedule" id="chatterbox-monthly" autocomplete="on" checked  value="1"><span for="monthly" name="monthly"> Monthly
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="plan--schedule" id="chatterbox-annually" autocomplete="off" value="12"> <span for="annually" name="annually">Annually</span>
+              </label>
+            </div>
+            <!-- <div class="toggle_radio">
+              <input type="radio" class="toggle_option" name="plan--schedule" id="chatterbox-monthly" value="1">
+              <input type="radio" checked class="toggle_option" id="chatterbox-annually" name="plan--schedule"  value="12">
+              <label for="monthly" name="monthly">
+                <span>Monthly</span>
+              </label>
+              <label for="annually" name="annually">
+                <span>Annually</span>
+              </label>
+              <div class="toggle_option_slider">
+              </div>
+            </div> -->
+            <button class="btn btn-primary" id="chatterbox--calculate">Calculate price</button>
+            </form>
+            <footer class="plan--cost">
+              <p></p>
+            </footer>
+          </div>
+          <div class="col-sm-2">
+            <!--blank space-->
+          </div>
+        </div>
+        </div>
+        </section>
+        <!-- end of build plan - chatterbox -->
+      </div> <!-- end of tab-chatterbox -->
 
-   <!-- chatterbox -->
-   <section id="chatterbox" class="build-plan">
-   <h1>Build Your Chatterbox Plan</h1>
-   <div class="container">
-   <div class="row">
-     <div class="col-sm-2">
-       <!--blank space-->
-     </div>
-     <div id="chatterbox-calculate" class="col-sm-8">
-       <!--make box around this-->
-       <form>
-       <h3>Choose GB per month:</h3>
-       <label class="radio-inline">
-         <input type="radio" name="plan--price" id="chatterbox-1GB" value="14" checked> 1 GB
-       </label>
-       <label class="radio-inline">
-         <input type="radio" name="plan--price" id="chatterbox-6GB" value="18"> 6 GB
-       </label>
-       <label class="radio-inline">
-         <input type="radio" name="plan--price" id="chatterbox-10GB" value="20"> 10 GB
-       </label>
-       <label class="radio-inline">
-         <input type="radio" name="plan--price" id="chatterbox-20GB" value="30"> 20 GB
-       </label>
-       <div class="mins">
-         <h3>Choose minutes per month:</h3>
-         <label class="radio-inline">
-           <input type="radio" name="plan--mins" id="chatterbox-180-min" value="3" checked> 180
-         </label>
-         <label class="radio-inline">
-           <input type="radio" name="plan--mins" id="chatterbox-300-min" value="5"> 300
-         </label>
-         <label class="radio-inline">
-           <input type="radio" name="plan--mins" id="chatterbox-600-min" value="10"> 600
-         </label>
-         <label class="radio-inline">
-           <input type="radio" name="plan--mins" id="chatterbox-unlimited-min" value="12"> Unlimited
-         </label>
-       </div>
-       <h3>Pay:</h3>
-       <div class="toggle_radio">
-         <input type="radio" class="toggle_option" name="plan--schedule" id="chatterbox-monthly" value="1">
-         <input type="radio" checked class="toggle_option" id="chatterbox-annually" name="plan--schedule"  value="12">
-         <label for="monthly" name="monthly">
-           <span>Monthly</span>
-         </label>
-         <label for="annually" name="annually">
-           <span>Annually</span>
-         </label>
-         <div class="toggle_option_slider">
-         </div>
-       </div>
-       <button id="chatterbox--calculate">Calculate price</button>
-       </form>
-       <footer class="plan--cost">
-         <p></p>
-       </footer>
-     </div>
-     <div class="col-sm-2">
-       <!--blank space-->
-     </div>
-   </div>
-   </div>
-   </section>
-   <!-- end of build plan - chatterbox -->
+      <div class="tab-pane fade" id="pills-family" role="tabpanel" aria-labelledby="pills-family-tab">
+
+        <!-- end of build plan - chatterbox -->
+      </div>
+    </div>
+
+
 
 
       <section>
@@ -235,15 +283,15 @@
 
         <div id="social-media" class="col-xs-12 col-sm-4">
            <a href="#" class="fa fa-facebook"></a>
-           <a href="#" class="fa fa-twitter"></a>
-           <a href="#" class="fa fa-instagram"></a
+           <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a>
+           <a href="#" class="fa fa-instagram"></a>
         </div>
       </div> <!--close row-->
       <hr class= "line" />
   </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/calculator.js"></script>
   </body>
 </html>

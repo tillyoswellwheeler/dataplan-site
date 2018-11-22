@@ -3,13 +3,13 @@
     <head>
       <meta charset="UTF-8">
       <title>Data Plan</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="css/stylesheet.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/assets/dataplan-logo.png" width="70" height="70" alt="BTEE Logo.">
@@ -18,7 +18,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav" id="navbar-primary">
             <a class="nav-link" href="">DEALS</a>
             <a class="nav-link" href="">PHONES</a>
             <a class="nav-link" href="">SUPPORT</a>
@@ -28,12 +28,17 @@
     </nav>
 
     <header class="container-fluid">
-      <h1 class="banner">BLACK FRIDAY IS HERE. <span>Don’t miss out on our awesome deals.</span></h1>
-      <img class="img-responsive" src="images/homepage-header.jpg" alt="People looking at a city.">
+      <div class="row">
+        <div class="col-12"
+          <div><h1 class="banner" width="100%">BLACK FRIDAY IS HERE. <span>Don’t miss out on our awesome deals.</span></h1></div>
+          <img class="img-responsive" width="100%" src="images/homepage-header.jpg" alt="People looking at a city.">
+        </div>
+      </div>
 
-      <div class="container cards-row">
+
+      <div class="container phones-container">
         <div class="row text-center">
-          <div class="card col-md-3" >
+          <div class="card col-md-3">
             <div class="card-body">
               <h2 class="card-title">Lone wolf</h2>
               <img class="" src="images/assets/dataplan-phone.png" alt="">
@@ -42,7 +47,7 @@
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+              <button type="button" href="dataplan-page.html" class="btn btn-primary">SHOP NOW</button>
             </div>
           </div>
 
@@ -55,7 +60,7 @@
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-              <button type="button" href="#" class="btn btn-primary">SHOP NOW</button>
+              <button type="button" href="dataplan-page.html" class="btn btn-primary">SHOP NOW</button>
             </div>
           </div>
 
@@ -68,74 +73,22 @@
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-              <button type="button" href="#" class="btn btn-primary btn-shop-now">SHOP NOW</button>
+              <button type="button" href="dataplan-page.html" class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="card col-md-3" >
+            <div class="card-body">
+              <h2 class="card-title">Lucky Dip</h2>
+              <img class="" src="images/assets/dataplan-phone-highlight.png" alt="">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo who knows</li>
+                <li class="list-group-item">Tap like you just don't...</li>
+                <li class="list-group-item">Rest at erelaxos</li>
+              </ul>
+              <button type="button" href="#luckdip" class="btn btn-primary lucky-button">WHO NOWS</button>
             </div>
           </div>
         </div>
-          <!-- <div class="col col-lg-2">
-            <h2>Lone wolf</h2>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <button class="">SHOP NOW</button>
-          </div>
-          <div class="col-md-auto">
-            <h2>Chatterbox</h2>
-            <img class="" src="images/assets/dataplan-phone.png" alt="">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <button class="">SHOP NOW</button>
-          </div>
-          <div class="col col-lg-2">
-            <h2>Family Bundle</h2>
-            <img class="" src="images/assets/dataplan-phone.png" alt="">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <button class="">SHOP NOW</button>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="card-carousel">
-        <div class="my-card">
-          <h2>Lone wolf</h2>
-          <img class="" src="images/assets/dataplan-phone.png" alt="">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <button class="">SHOP NOW</button>
-        </div>
-
-        <div class="my-card">
-          <h2>Chatterbox</h2>
-          <img class="" src="images/assets/dataplan-phone.png" alt="">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <button class="">SHOP NOW</button>
-        </div>
-
-        <div class="my-card">
-          <h2>Family bundle</h2>
-          <img class="" src="images/assets/dataplan-phone.png" alt="">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <button class="">SHOP NOW</button>
-        </div> -->
 
 
       </div>
@@ -148,7 +101,7 @@
 
       <section class="container-fluid text-center" id="netflix-container">
         <img class="" src="images/netflix-logo.png" alt="Netflix logo.">
-        <h2 class="">3 MONTHS FREE</h2>
+        <h2 class="h2-margintop">3 MONTHS FREE</h2>
         <p>When you sign up to BT today!</p>
       </section>
 
@@ -191,7 +144,7 @@
   </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/....js"></script>
   </body>
 </html>
