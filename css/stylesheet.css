@@ -40,6 +40,11 @@ h2 {
  z-index: 1;
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /*Card-Carosel*/
 
 .phones-container {
@@ -61,7 +66,9 @@ h2 {
 
 .card {
   border: none;
-  background-color: opacity 0;
+  background-color:rgba(192,192,192,0);
+
+
 }
 
 .card-row {
