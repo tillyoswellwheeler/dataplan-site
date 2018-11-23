@@ -140,6 +140,17 @@ ul .list-group {
      background: grey;
      padding:20px;
    }
+
+   .banner {
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+ }
+
+ @media (max-width: 990px){
+ .card-body {
+    font-size: 14px;
  }
 
 .build-plan{
