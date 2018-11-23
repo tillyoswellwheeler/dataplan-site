@@ -21,9 +21,9 @@ $("#pills-family-tab").click(function(){
     // return family-tab;
 });
 
-$("button").click(function(){
-    $("input").trigger("select");
-});
+// $("button").click(function(){
+//     $("input").trigger("select");
+// });
 
 
 
